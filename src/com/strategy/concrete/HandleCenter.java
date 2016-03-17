@@ -1,13 +1,12 @@
 package com.strategy.concrete;
 
 import com.strategy.context.ProjectPublisher;
-import com.strategy.iface.IProjectTeamStrategy;
 
 public class HandleCenter {
 
 	public static void main(String[] args) {
-		IProjectTeamStrategy iTeamA = new ProjectTeamA();
-		IProjectTeamStrategy iTeamB = new ProjectTeamB();
+		ProjectTeamA iTeamA = new ProjectTeamA();
+		ProjectTeamB iTeamB = new ProjectTeamB();
 		
 		ProjectPublisher projectPublisher = new ProjectPublisher(iTeamB);
 		int i = 0;
